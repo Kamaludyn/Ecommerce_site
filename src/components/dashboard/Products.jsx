@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import DataTable from "react-data-table-component";
-import Spinner from "../components/Spinner";
+import Spinner from "../Spinner";
 import AddProductForm from "./categories/AddProductForm";
 
 const Products = ({ categories, setCategories }) => {
