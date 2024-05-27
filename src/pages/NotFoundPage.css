@@ -1,0 +1,29 @@
+.section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+  width: 100vw;
+}
+
+.exclamation-icon {
+  font-size: 50px;
+}
+
+.nf-p {
+  color: #272525;
+}
+
+.go-back {
+  text-decoration: none;
+  background: #272525;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.go-back:hover {
+  background: #000000;
+}

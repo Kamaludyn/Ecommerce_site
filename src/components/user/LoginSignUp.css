@@ -1,0 +1,128 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: 35px auto 0;
+}
+
+.sub-header .underline {
+  width: 25%;
+  height: 4px;
+  background: #088178;
+  border-radius: 9px;
+}
+
+form .inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+form .input {
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  margin: 15px auto 0;
+  width: 90%;
+  padding-left: 5px;
+}
+
+form .input input {
+  width: 400px;
+  background: transparent;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 10px 10px 7px;
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.password {
+  margin-top: 27px;
+  color: #797979;
+  font-size: 16px;
+}
+
+.password .link {
+  color: #088178;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.checkboxs {
+  width: 80%;
+  margin: 15px auto;
+}
+
+input[type="checkbox"] {
+  accent-color: #088178;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.checkboxs div {
+  display: inline;
+  text-align: right;
+}
+
+.submit {
+  width: 90%;
+  background-color: #088178;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 35px auto 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #09aa9f;
+}
+
+.select {
+  color: #088178;
+  font-size: 16px;
+  font-weight: 700;
+  width: 50%;
+  padding-bottom: 7px;
+  border-bottom: 3px solid #088178;
+  cursor: pointer;
+}
+
+.deselect {
+  color: #088178;
+  font-size: 16px;
+  font-weight: 700;
+  width: 50%;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+@media (min-width: 799px) {
+  form {
+    width: 40%;
+  }
+
+  .sub-header {
+    width: 35%;
+  }
+}

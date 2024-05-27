@@ -1,0 +1,45 @@
+.hero-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.hero-images div {
+  width: 100%;
+}
+
+.hero-images div .img1,
+.hero-images div .img2 {
+  height: 90vh;
+  width: 100%;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (min-width: 799px) {
+  .h2 {
+    margin: 20px;
+  }
+
+  .hero-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .hero-images div {
+    width: 49%;
+  }
+
+  .hero-images div .img1,
+  .hero-images div .img2 {
+    height: 80vh;
+    width: 100%;
+    border-radius: 5px;
+  }
+}

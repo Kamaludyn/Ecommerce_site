@@ -1,0 +1,72 @@
+.h2-men {
+  margin: 5px;
+}
+
+.hero-images-men {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hero-images-men .hero1 {
+  height: 45vh;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.hero-images-men .hero-imgs-side {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  width: 100%;
+}
+
+.hero-images-men .hero-imgs-side img {
+  height: 40vh;
+  object-fit: cover;
+}
+@media (min-width: 560px) {
+  .pro {
+    width: 45%;
+    margin: 15px 5px;
+  }
+}
+
+@media (min-width: 799px) {
+  .h2-men {
+    margin: 20px;
+  }
+
+  .hero-images-men {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .hero-images-men .hero1 {
+    height: 91vh;
+    width: 59%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .hero-images-men .hero-imgs-side {
+    row-gap: 5px;
+    width: 40%;
+  }
+
+  .hero-images-men .hero-imgs-side img {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .pro {
+    width: 23%;
+  }
+}

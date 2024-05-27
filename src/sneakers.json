@@ -1,0 +1,220 @@
+{
+  "sneakers": [
+    {
+      "id": 1,
+      "category": "men",
+      "image": "src/assets/images/images/men/adidas/gazzelle/gazzelle1.webp",
+      "brand": "Adidas",
+      "name": "Gazelle Bold W 'Almost Yellow'",
+      "price": 114.0,
+      "date": 2023
+    },
+    {
+      "id": 2,
+      "category": "men",
+      "image": "src/assets/images/images/men/Asics/chrome1.webp",
+      "brand": "Asics",
+      "name": "GEL-NYC 'Ivory Clay'",
+      "price": 131.0,
+      "date": 2023
+    },
+    {
+      "id": 3,
+      "category": "men",
+      "image": "src/assets/images/images/men/karhu/aria1.webp",
+      "brand": "Karhu",
+      "name": "Aria 95 'Stormy India'",
+      "price": 122.0,
+      "date": 2023
+    },
+    {
+      "id": 4,
+      "category": "men",
+      "image": "src/assets/images/images/men/new-balance/nb1.webp",
+      "brand": "New Balance",
+      "name": "9060 'Crystal Pink'",
+      "price": 157.0,
+      "date": 2023
+    },
+    {
+      "id": 5,
+      "category": "women",
+      "image": "src/assets/images/images/women/puma/b-girl1.webp",
+      "brand": "Puma",
+      "name": "Suede B-Girl 'Navy'",
+      "price": 96,
+      "date": 2023
+    },
+    {
+      "id": 6,
+      "category": "women",
+      "image": "src/assets/images/images/women/puma/pinkpuma1.webp",
+      "brand": "Puma",
+      "name": "Suede B-Girl 'Pink'",
+      "price": 102,
+      "date": 2023
+    },
+    {
+      "id": 7,
+      "category": "women",
+      "image": "src/assets/images/images/women/veja/veja1.webp",
+      "brand": "Veja",
+      "name": "Recife Logo 'White Black'",
+      "price": 144.0,
+      "date": 2023
+    },
+    {
+      "id": 8,
+      "category": "women",
+      "image": "src/assets/images/images/women/reebok/classic1.jpg",
+      "brand": "Reebok",
+      "name": "Classic Leather SP 'Chalk'",
+      "price": 105.0,
+      "date": 2023
+    },
+    {
+      "id": 9,
+      "category": "men",
+      "image": "src/assets/images/images/New Arrivals/men/adidas/boost/boost1.webp",
+      "brand": "Adidas",
+      "name": "X_PLRBOOST 'Grey'",
+      "price": 88.0,
+      "date": 2024
+    },
+    {
+      "id": 10,
+      "category": "men",
+      "image": "src/assets/images/images/New Arrivals/men/hi-tec/htc.webp",
+      "brand": "Hi-Tec",
+      "name": "HTS Shadow 'Delicate Blue",
+      "price": 140.0,
+      "date": 2024
+    },
+    {
+      "id": 11,
+      "category": "men",
+      "image": "src/assets/images/images/New Arrivals/men/new-balance/fresh-form/freshform3.webp",
+      "brand": "New Balance",
+      "name": "Fresh Foam X More Trail V3'",
+      "price": 119.99,
+      "date": 2024
+    },
+    {
+      "id": 12,
+      "category": "men",
+      "image": "src/assets/images/images/New Arrivals/men/new-balance/nb/nb4.webp",
+      "brand": "New Balance",
+      "name": "9060 'Burgundy'",
+      "price": 105.0,
+      "date": 2024
+    },
+    {
+      "id": 13,
+      "category": "women",
+      "image": "src/assets/images/images/New Arrivals/women/diadora/Dia1.webp",
+      "brand": "Diadora",
+      "name": "Mythos Propulsion 280 Mascotte",
+      "price": 160.0,
+      "date": 2024
+    },
+    {
+      "id": 14,
+      "category": "women",
+      "image": "src/assets/images/images/New Arrivals/women/new-balance/fuelcell1.webp",
+      "brand": "New Balance",
+      "name": "FuelCell SuperComp Elite v4",
+      "price": 249.99,
+      "date": 2024
+    },
+    {
+      "id": 15,
+      "category": "women",
+      "image": "src/assets/images/images/New Arrivals/women/nike/airmax1.webp",
+      "brand": "Nike",
+      "name": "Air Max 90 'White'",
+      "price": 130.0,
+      "date": 2024
+    },
+    {
+      "id": 16,
+      "category": "women",
+      "image": "src/assets/images/images/New Arrivals/women/veja/veja4.webp",
+      "brand": "Veja",
+      "name": "Classic Leather SP 'Chalk'",
+      "price": 105.0,
+      "date": 2024
+    },
+    {
+      "id": 17,
+      "category": "men",
+      "image": "src/assets/images/images/New Arrivals/men/nike/air-jordan/air-jordan-tatum-2-gs-mint-foam-lava-glow-black-hyper-jade-fj6459-300-footwear _ sneaker-packshots-0.jpg",
+      "brand": "Nike",
+      "name": "Air Jordan Tatum 2 GS 'Mint Lava'",
+      "price": 299.99,
+      "date": 2024
+    },
+    {
+      "id": 18,
+      "category": "men",
+      "image": "src/assets/images/images/New Arrivals/men/hi-tec/hi-tec-shadow/Hi-tec1.webp",
+      "brand": "Hi-Tec",
+      "name": "Shadow RGS 'Mentol'",
+      "price": 159.99,
+      "date": 2024
+    },
+    {
+      "id": 19,
+      "category": "men",
+      "image": "src/assets/images/images/New Arrivals/men/new-balance/nb-brandon/brandon3.webp",
+      "brand": "New Balance",
+      "name": "Numeric Brandon Westgate 508",
+      "price": 84.99,
+      "date": 2024
+    },
+    {
+      "id": 20,
+      "category": "men",
+      "image": "src/assets/images/images/New Arrivals/men/merrel/merrel-moab1.webp",
+      "brand": "Merrel",
+      "name": "Gore-Tex Moab",
+      "price": 124.99,
+      "date": 2024
+    },
+    {
+      "id": 21,
+      "category": "men",
+      "image": "src/assets/images/images/men/karhu/karhu-fushion/fushion2-1.webp",
+      "brand": "Karhu",
+      "name": "Fushion 2.0 'Nighty Sky'",
+      "price": 71.99,
+      "date": 2023
+    },
+    {
+      "id": 22,
+      "category": "men",
+      "image": "src/assets/images/images/men/nike/air-max-tw/maxtw1.webp",
+      "brand": "Nike",
+      "name": "Air-Max TW 'Black'",
+      "price": 55.0,
+      "date": 2023
+    },
+    {
+      "id": 23,
+      "category": "men",
+      "image": "src/assets/images/images/men/nike/air-max-95/max1.webp",
+      "brand": "Nike",
+      "name": "Air Max 95 Ocean Cube",
+      "price": 63.0,
+      "date": 2023
+    },
+    {
+      "id": 24,
+      "category": "men",
+      "image": "src/assets/images/images/men/reebok/classics1.jpg",
+      "brand": "Reebok",
+      "name": "Classics CLUB BULC 'Dark Green'",
+      "price": 105.0,
+      "date": 2023
+    }
+  ]
+}
