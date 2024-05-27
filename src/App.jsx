@@ -12,7 +12,7 @@ import WomenPage from "./pages/WomenPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Container from "./components/product-preview/Container";
 import LoginSignUp from "./components/user/LoginSignUp";
-import Dashboard from "./dashboard/Dashboard";
+import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
   const router = createBrowserRouter(

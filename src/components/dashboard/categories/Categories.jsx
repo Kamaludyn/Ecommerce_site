@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import AddProductForm from "./AddProductForm";
 import axios from "axios";
-import Spinner from "../../components/Spinner";
+import Spinner from "../../Spinner";
 
 const Categories = ({ categories, setCategories }) => {
   const [openForm, setOpenForm] = useState(false);

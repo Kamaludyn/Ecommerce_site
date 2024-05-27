@@ -96,9 +96,7 @@ const Menu = ({ setIsMobileScreen, isLargeScreen }) => {
           <div className="dropdown">
             <ul>
               <li>
-                <NavLink class to="/collection1">
-                  Phones and Accessories
-                </NavLink>
+                <NavLink to="/collection1">Phones and Accessories</NavLink>
               </li>
               <li>
                 <NavLink to="/collection2">Collection 2</NavLink>

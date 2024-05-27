@@ -12,6 +12,8 @@ import { FaSearch } from "react-icons/fa";
 const Nav = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [isMobileScreen, setIsMobileScreen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("");
+
   const navigate = useNavigate();
 
   const { numberOfProd, dropdown, openDropdownMenu } =
@@ -21,6 +23,10 @@ const Nav = () => {
     if (!isLargeScreen) {
       setIsMobileScreen(true);
     }
+  };
+
+  const handleChange = (e) => {
+    setSelectedOption(e.target.value);
   };
 
   useEffect(() => {
@@ -54,9 +60,13 @@ const Nav = () => {
           </NavLink>
         </div>
         <div className="search-icon-container">
-          <select name="Search-options" id="">
-            <option value="electronics" selected disabled>
-              Search by categories
+          <select
+            name="Search-options"
+            defaultValue={selectedOption}
+            onChange={handleChange}
+          >
+            <option value="" disabled>
+              Search by category
             </option>
             <option value="electronics">Electronics</option>
             <option value="computers">Computers & Accessories</option>
