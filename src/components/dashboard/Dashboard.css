@@ -62,9 +62,9 @@ h1 {
 .sidebar {
   display: none;
   background: #e6e6e6;
-  height: 100vh;
+  height: 120vh;
   width: 40%;
-  padding: 0;
+  padding: 15px 0;
   margin: 0;
   box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.4);
   overflow-y: auto;
@@ -200,7 +200,7 @@ h1 {
 
 /* Product Section */
 .products-section {
-  margin: 20px;
+  margin: 20px 30px;
 }
 
 .products-section .data-table {
@@ -235,40 +235,41 @@ h1 {
 }
 
 /* Add Product Section */
-.add-prod-section {
+.display-container {
   background: #0000003a;
-  position: fixed;
+  position: absolute;
   top: 60px;
   left: 0;
   right: 0;
 }
 
-.add-prod-section .add-prod-form h3 {
+.display-container .add-prod-form h3 {
   color: #1c3d3b;
   margin-bottom: 20px;
 }
 
-.add-prod-section .add-prod-form {
+.display-container .add-prod-form {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  position: relative;
   width: 80%;
-  margin-top: 80px;
+  margin-top: 20px;
   padding: 30px 0;
   border-radius: 8px;
   box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
 
-.add-prod-section .add-prod-form label {
+.display-container .add-prod-form label {
   width: 60%;
   text-align: left;
   color: #1c3d3b;
   margin: 5px 0 3px;
 }
 
-.add-prod-section .add-prod-form input {
+.display-container .add-prod-form input {
   color: #1c3d3b;
   width: 60%;
   padding: 8px 5px;
@@ -277,12 +278,12 @@ h1 {
   margin-bottom: 10px;
 }
 
-.add-prod-section .add-prod-form input:focus {
+.display-container .add-prod-form input:focus {
   outline: none;
   background: #cffffc;
 }
 
-.add-prod-section .add-prod-form button {
+.display-container .add-prod-form button {
   width: 60%;
   padding: 8px;
   background: #088178;
@@ -295,9 +296,29 @@ h1 {
 .close-form {
   width: 30px;
   position: absolute;
-  top: 100px;
-  right: 100px;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
+}
+
+/* Product Preview */
+.product-preview {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: fit-content;
+  padding: 15px 30px;
+  margin: 20px 40px 0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.75);
+}
+
+.product-preview img {
+  margin: 0 auto;
+  width: 50%;
+  height: 200px;
+  border-radius: 8px;
 }
 
 @media (min-width: 799px) {
@@ -325,6 +346,7 @@ h1 {
   /* Side Bar */
   .sidebar {
     display: block;
+    height: 150vh;
     width: 25%;
     padding-top: 0;
   }
@@ -375,7 +397,7 @@ h1 {
   }
 
   /* Add Product Form */
-  .add-prod-section {
+  .display-container {
     position: absolute;
     top: -1px;
     left: 5px;
@@ -386,14 +408,14 @@ h1 {
     /* border: 2px solid; */
   }
 
-  .add-prod-section .add-prod-form {
+  .display-container .add-prod-form {
     position: relative;
     width: 70%;
     padding: 20px 0;
     margin: 10px 0;
   }
 
-  .add-prod-section .add-prod-form .close-form {
+  .display-container .add-prod-form .close-form {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -445,5 +467,11 @@ h1 {
     border: none;
     margin-top: 10px;
     cursor: pointer;
+  }
+
+  /* Product Preview */
+
+  .product-preview img {
+    height: 300px;
   }
 }

@@ -41,7 +41,7 @@ const AddProductForm = ({ setOpenForm, categories }) => {
   };
 
   return (
-    <section className="add-prod-section">
+    <section className="display-container">
       <form className="add-prod-form" onSubmit={handleSubmit}>
         <h3>Add Product</h3>
         <label htmlFor="product_image">Product Image</label>

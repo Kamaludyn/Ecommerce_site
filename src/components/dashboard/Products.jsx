@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { FaEdit, FaTrash } from "react-icons/fa";
 import DataTable from "react-data-table-component";
 import Spinner from "../Spinner";
 import AddProductForm from "./categories/AddProductForm";
+import ProductPreview from "./ProductPreview";
 
-const Products = ({ categories, setCategories }) => {
+const Products = ({ categories }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [openForm, setOpenForm] = useState(false);
+  const [selectedRow, setSelectedRow] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -69,10 +72,44 @@ const Products = ({ categories, setCategories }) => {
       selector: (row) => row.countInStock,
       sortable: true,
     },
+    {
+      name: "Actions",
+      cell: (row) => (
+        <div>
+          <FaEdit
+            style={{
+              cursor: "pointer",
+              marginRight: "10px",
+              color: "greenyellow",
+            }}
+            onClick={() => handleEdit(row)}
+          />
+          <FaTrash
+            style={{ cursor: "pointer", color: "firebrick" }}
+            onClick={() => handleDelete(row)}
+          />
+        </div>
+      ),
+      ignoreRowClick: true,
+      allowOverflow: true,
+      button: true,
+    },
   ];
 
   const addProduct = () => {
     setOpenForm(true);
+  };
+
+  const handleRowClick = (row) => {
+    setSelectedRow(row);
+  };
+
+  const handleDelete = () => {
+    console.log("deleted");
+  };
+
+  const handleEdit = () => {
+    console.log("edit");
   };
 
   return (
@@ -95,10 +132,20 @@ const Products = ({ categories, setCategories }) => {
           responsive
           subHeaderAlign="right"
           subHeaderWrap
+          onRowClicked={handleRowClick}
+          highlightOnHover
+          pointerOnHover
+          selectableRows
         />
       )}
       {openForm && (
         <AddProductForm categories={categories} setOpenForm={setOpenForm} />
+      )}
+      {selectedRow && (
+        <ProductPreview
+          selectedRow={selectedRow}
+          setSelectedRow={setSelectedRow}
+        />
       )}
     </section>
   );
