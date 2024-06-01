@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const AddProductForm = ({ setOpenForm, categories }) => {
+const AddProductForm = ({ setOpenForm, categories, formTitle }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("clicked");
@@ -43,7 +43,7 @@ const AddProductForm = ({ setOpenForm, categories }) => {
   return (
     <section className="display-container">
       <form className="add-prod-form" onSubmit={handleSubmit}>
-        <h3>Add Product</h3>
+        <h3>{formTitle ? "Update Product Form" : "Add ProductForm"}</h3>
         <label htmlFor="product_image">Product Image</label>
         <input
           type="file"
@@ -84,7 +84,7 @@ const AddProductForm = ({ setOpenForm, categories }) => {
           <div>No</div>
           <input type="radio" name="no" />
         </div>
-        <button>Add</button>
+        <button>{formTitle ? "Update Product" : "Add Product"}</button>
         <svg
           className="close-form"
           width="14"

@@ -11,6 +11,7 @@ const Products = ({ categories }) => {
   const [loading, setLoading] = useState(false);
   const [openForm, setOpenForm] = useState(false);
   const [selectedRow, setSelectedRow] = useState(false);
+  const [formTitle, setFormTitle] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -96,27 +97,44 @@ const Products = ({ categories }) => {
     },
   ];
 
-  const addProduct = () => {
+  const openProductForm = () => {
     setOpenForm(true);
+    setFormTitle(false);
   };
 
   const handleRowClick = (row) => {
     setSelectedRow(row);
   };
 
-  const handleDelete = () => {
-    console.log("deleted");
+  const handleDelete = async (row) => {
+    const confirmDelete = confirm(
+      `Are you sure you want to delete the product "${row.name}"?`
+    );
+    if (!confirmDelete) return;
+
+    try {
+      await axios.delete(
+        `https://mern-ecommerce-backend-bjcv.onrender.com/api/products/${row._id}`
+      );
+      setProducts(products.filter((product) => product._id !== row._id));
+      console.log("Product deleted");
+      alert("Product deleted successfully.");
+    } catch (error) {
+      console.error("Error deleting product:", error);
+      alert("Failed to delete product. Please try again.");
+    }
   };
 
   const handleEdit = () => {
-    console.log("edit");
+    setOpenForm(true);
+    setFormTitle(true);
   };
 
   return (
     <section className="products-section">
       <header>
         <h2>Products</h2>
-        <button onClick={addProduct}>Add Product</button>
+        <button onClick={openProductForm}>Add Product</button>
       </header>
       {loading ? (
         <Spinner />
@@ -139,7 +157,11 @@ const Products = ({ categories }) => {
         />
       )}
       {openForm && (
-        <AddProductForm categories={categories} setOpenForm={setOpenForm} />
+        <AddProductForm
+          categories={categories}
+          setOpenForm={setOpenForm}
+          formTitle={formTitle}
+        />
       )}
       {selectedRow && (
         <ProductPreview
